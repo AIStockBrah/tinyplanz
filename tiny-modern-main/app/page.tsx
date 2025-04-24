@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ImageIcon, Sparkles } from "lucide-react"
+import { ImageIcon, Sparkles, DraftingCompass } from "lucide-react"
 import Image from "next/image"
 import { ImageGenerator } from "@/components/image-generator"
 import { SchematicGenerator } from "@/components/schematic-generator"
@@ -62,17 +62,20 @@ export default function Home() {
           </div>
 
           <ImageGenerator />
-          
-          <div className="mt-16">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Generate Schematic Layout</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Get a detailed floor plan and layout for your architectural design.
-              </p>
-            </div>
-            
-            <SchematicGenerator />
+        </div>
+      </section>
+
+      {/* Schematic Generator Section */}
+      <section id="schematic" className="py-16 scroll-mt-16">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Generate Technical Schematics</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Create detailed technical drawings and floor plans for your architectural designs.
+            </p>
           </div>
+
+          <SchematicGenerator />
         </div>
       </section>
 
