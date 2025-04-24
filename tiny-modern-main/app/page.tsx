@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ImageIcon, Sparkles } from "lucide-react"
 import Image from "next/image"
 import { ImageGenerator } from "@/components/image-generator"
+import { SchematicGenerator } from "@/components/schematic-generator"
 
 export default function Home() {
   return (
@@ -61,6 +62,17 @@ export default function Home() {
           </div>
 
           <ImageGenerator />
+          
+          <div className="mt-16">
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl font-bold mb-4">Generate Schematic Layout</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Get a detailed floor plan and layout for your architectural design.
+              </p>
+            </div>
+            
+            <SchematicGenerator />
+          </div>
         </div>
       </section>
 
